@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePickerStyle" parent="android:Widget.DatePicker">
+        <item name="android:headerBackground">#FFFFFF</item>
+        <item name="android:calendarTextColor">#000000</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialogTheme</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:datePickerStyle">@style/DatePickerWidgetStyle</item>
+    </style>
+
+    <style name="DatePickerWidgetStyle" parent="android:Widget.Material.DatePicker">
+        <item name="android:headerBackground">#FFFFFF</item>
+        <item name="android:colorAccent">#00cc99</item>
+    </style>
+
+
+</resources>

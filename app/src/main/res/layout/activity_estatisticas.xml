@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    tools:context=".Views.Slots.Estatisticas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+        <TextView
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatisticas"
+            android:textSize="20sp"
+            android:textColor="@color/cor_p"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cinza"
+            android:layout_marginTop="20dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:background="@color/cinza2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bordasv4"
+                android:padding="4dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <TextView
+                    android:id="@+id/btnRegistros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordasv6"
+                    android:scaleType="fitCenter"
+                    android:text="Registros"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="9dp"
+                    android:contentDescription="Icon 2"
+                    android:onClick="onButton1ClickFavoritos" />
+
+                <TextView
+                    android:id="@+id/btnPreco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:text="Tabela de preços"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="9dp"
+                    android:contentDescription="Icon 2"
+                    android:onClick="onButton1ClickFavoritos" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:background="@drawable/bordas"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transações"
+                    android:layout_marginStart="15dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/cor_p"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantidade"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/cor_p"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horas"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/cor_p"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor(.Mt)"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/cor_p"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Carros"
+                            android:layout_marginStart="2dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="s"
+                            android:layout_marginStart="1dp"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(.Mt)"
+                            android:layout_marginStart="1dp"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="@color/cor_pmlasd"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bordas"
+                android:padding="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Registros dos carros"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/cor_p"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Proprietario"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/cor_p"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Valor-park"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/cor_p"
+                            android:layout_marginStart="35dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Placa"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:textColor="@color/cor_p"
+                            android:layout_weight="1"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            >
+
+                            <TextView
+                                android:id="@+id/propri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paulo Tinga"
+                                android:layout_marginStart="15dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/cor_pmlasd"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/valor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ferrar"
+                                android:layout_marginStart="15dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/cor_pmlasd"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/plaque"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AAG 931"
+                                android:layout_marginStart="15dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/cor_pmlasd"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/cinza2"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnPrev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/baseline_arrow_back_24"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        android:contentDescription="Icon 2"
+                        android:onClick="onButton1ClickFavoritos" />
+
+                    <ImageButton
+                        android:id="@+id/btnNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/baseline_arrow_forward_24"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:padding="15dp"
+                        android:contentDescription="Icon 2"
+                        android:onClick="onButton1ClickVendas" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

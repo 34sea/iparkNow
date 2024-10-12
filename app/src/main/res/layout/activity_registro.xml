@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    tools:context=".Views.Slots.Registro">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp">
+        <TextView
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estatisticas"
+            android:textSize="20sp"
+            android:textColor="@color/cor_p"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cinza"
+            android:layout_marginTop="20dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:background="@color/cinza2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bordasv4"
+                android:padding="4dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <TextView
+                    android:id="@+id/btnRegistros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:text="Registros"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="9dp"
+                    android:contentDescription="Icon 2"
+                    android:onClick="onButton1ClickFavoritos" />
+
+                <TextView
+                    android:id="@+id/btnPreco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordasv6"
+                    android:scaleType="fitCenter"
+                    android:text="Tabela de preços"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="9dp"
+                    android:contentDescription="Icon 2"
+                    android:onClick="onButton1ClickFavoritos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:background="@color/cinza2"
+                >
+                <TableLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    >
+                    <TableRow
+                        android:layout_marginTop="0dp"
+                        >
+                        <LinearLayout
+                            android:id="@+id/testeCad"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Por Hora"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/testeClock4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:padding="10dp"
+                            android:background="@color/black"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="200"
+                                    android:textColor="@color/white"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=".00Mt"
+                                    android:textColor="@color/white"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="15dp"
+                        >
+                        <LinearLayout
+                            android:id="@+id/testeCad3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semanal"
+                                android:textColor="@color/black"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/testeClock2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:padding="10dp"
+                            android:background="@color/black"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="200"
+                                    android:textColor="@color/white"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=".00Mt"
+                                    android:textColor="@color/white"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="15dp"
+                        >
+                        <LinearLayout
+                            android:id="@+id/testeCad2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mensal"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/testeClock"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="cellClicked"
+                            android:padding="10dp"
+                            android:background="@color/black"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="200"
+                                    android:textColor="@color/white"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=".00Mt"
+                                    android:textColor="@color/white"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

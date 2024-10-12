@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pri">#00cc99</color>
+    <color name="prie">#e53935</color>
+    <color name="cinza">#cccccc</color>
+    <color name="cinza2">#eeeeee</color>
+    <color name="cor_p">#0b2239</color>
+    <color name="cor_pm">#0d1918</color>
+    <color name="cor_pml">#063a34</color>
+    <color name="cor_pmlk">#063a34</color>
+    <color name="cor_pmlasd">#aaaaaa</color>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    tools:context=".Views.Slots.Cadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_arrow_back_24"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textSize="25sp"
+            android:textColor="@color/cor_p"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cinza"
+            android:layout_marginTop="20dp"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+
+
+        <EditText
+            android:id="@+id/editTextPlaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Placa do Carro"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:id="@+id/editTextMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca do Carro" />
+
+        <EditText
+            android:id="@+id/editTextNomePr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do proprietario" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                />
+            <TextView
+                android:id="@+id/lData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginStart="20px"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hora:"
+                />
+            <TextView
+                android:id="@+id/lHora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginStart="20px"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slot"
+                android:layout_marginStart="20px"
+                />
+            <TextView
+                android:id="@+id/Slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01"
+                android:layout_marginStart="20px"
+                />
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data: "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />-->
+
+            <!--<DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/DatePickerStyle" />-->
+
+
+            <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pri"
+            android:padding="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="Salvar"
+                android:layout_marginTop="50dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
